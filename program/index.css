@@ -1,0 +1,73 @@
+
+    
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .input-group {
+        display: flex;           /* 开启弹性布局 */
+        gap: 10px;               /* 元素之间的间距 */
+        width: 100%;             /* 占满容器宽度 */
+    }
+    @media (max-width: 768px) {
+        .container {
+            padding: 10px;
+        }
+        #inputBox, #send {
+            width: 100%;
+            margin: 5px 0;
+        }
+    }
+
+    #inputBox {
+        padding: 10px;
+        display: flex;  
+        margin: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;/* ✅ 设置输入框背景颜色 */
+        background-color: #5b6d13; /* 浅灰色背景 */
+        color: aliceblue;
+    }
+    #inputBox::placeholder {
+        color: #dad3d3; /* 提示文字颜色 */
+        /*font-style: italic; /* 斜体效果 */
+        opacity: 0.8; /* 透明度 */
+    }
+    #AIreturnText {
+        text-align: center;
+        display: flex;      /* 启用弹性布局 */
+        color: rgb(227, 187, 187);
+        align-items: center;
+    }
+    #outputBox {
+        text-align: center;
+        display: flex;      /* 启用弹性布局 */
+        color: rgb(255, 253, 253);
+        align-items: center;
+    }
+    #send {
+        padding: 10px 20px;
+        max-width: 200px;
+        background-color: #007bff;
+        color: rgb(255, 253, 253);
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-align: center;
+    }
+    
+    #send:hover {
+        background-color: #09615f;
+    }
+    h1{
+        background-color: #80c448;
+        text-align: center;
+        margin-bottom: 20px; /* 标题下方间距 */
+    }
+    html {
+        background-color: black;
+    }
